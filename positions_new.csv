@@ -1,0 +1,8 @@
+section,in_resume,title,institution,loc,start,end,description_1,description_2,description_3
+education,TRUE,PhD. Candidate in Public Health,Arizona State University,"Phoenix, AZ",2020,2024,Covid Analysis,Graduate Assistant,NA
+education,TRUE,"B.S., Applied Statistics",Trinity College Dublin,"Dublin,IR",2016,2020,Thesis: Consumption of tobacco impact on mental health,NA,NA
+analytic_positions,TRUE,Research Analyst,Arizona State University,"Phoenix, AZ",NA,2021,Primarily working with Researcher about Health Data management,Developing E-data management and analysis,NA
+analytic_positions,TRUE,Data Analyst,Data Science Lab,"Phoenix, AZ",2019,2020,Using R and Python to create a model for health data management,Work primarily done in R Shiny and basic phython.,NA
+data_science_writings,TRUE,Data Visualization for covid effect on mental health,Trinity College Dublin,"Dublin,IR",NA,2019,Story hospital data who has covid last 3 months.,Graphical presentation with animation .,Benefit for graduate student.
+data_science_writings,TRUE,Data Communication by presenting statistical tools and analysis,Trinity College Dublin,"Dublin,IR",NA,2020,Hazard model to explain and analyze survivorship.,develop new statistical tools for graduate student.,NA
+by_me_press,TRUE,The best Presenter,BBC,Washington Bangla,NA,2024,Presenting new statistical method to present the Covid data with R,NA,NA

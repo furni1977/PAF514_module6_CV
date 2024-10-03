@@ -1,6 +1,6 @@
 ---
-title: Nick Strayer's Resume"
-author: Nick Strayer
+title: Farhana's Resume"
+author: Farhana Urni
 date: "`r Sys.Date()`"
 output:
   pagedown::html_resume:
@@ -29,12 +29,12 @@ source('parsing_functions.R')
 
 # First let's get the data, filtering to only the items tagged as
 # Resume items
-position_data <- read_csv('positions.csv') %>% 
+position_data <- read_csv('positions_new.csv') %>% 
   filter(in_resume) %>% 
   mutate(
     # Build some custom sections by collapsing others
     section = case_when(
-      section %in% c('research_positions', 'industry_positions') ~ 'positions', 
+      section %in% c('research_positions', 'industry_positions', 'analytic_positions') ~ 'positions', 
       section %in% c('data_science_writings', 'by_me_press') ~ 'writings',
       TRUE ~ section
     )
@@ -47,18 +47,18 @@ Aside
 ================================================================================
 
 
-![logo](beta_dist.png){width=100%}
+![logo](https://upload.wikimedia.org/wikipedia/commons/9/99/Sparky_on_the_Field.jpg){width=50%}
 
 Contact {#contact}
 --------------------------------------------------------------------------------
 
 
 
-- <i class="fa fa-envelope"></i> nick.strayer@gmail.com
-- <i class="fa fa-twitter"></i> NicholasStrayer
-- <i class="fa fa-github"></i> github.com/nstrayer
-- <i class="fa fa-link"></i> [nickstrayer.me](http://nickstrayer.me/)
-- <i class="fa fa-phone"></i> (734) 645-0110
+- <i class="fa fa-envelope"></i> gaurni@asu.edu
+- <i class="fa fa-twitter"></i> Gaurni
+- <i class="fa fa-github"></i> https://github.com/furni1977/PAF514_module6_CV
+- <i class="fa fa-link"></i> [https://watts-college.github.io/PAF514_module6_CV](https://watts-college.github.io/PAF514_module6_CV)
+- <i class="fa fa-phone"></i> (017) 848-4653
 
 
 
@@ -70,11 +70,11 @@ Language Skills {#skills}
 skills <- tribble(
   ~skill,               ~level,
   "R",                  5,
-  "Javascript (d3.js)", 4.5,
-  "Python",             4,
-  "Bash",               3.5,
-  "SQL",                3,
-  "C++",                3,
+  "Javascript (d3.js)", 1,
+  "Python",             2,
+  "Bash",               1.5,
+  "SQL",                5,
+  "C++",                1,
   "AWK",                3
 )
 build_skill_bars(skills)
@@ -85,18 +85,17 @@ build_skill_bars(skills)
 Open Source Contributions {#open-source}
 --------------------------------------------------------------------------------
 
-All projects available at `github.com/nstrayer/<name>`
+All projects available at `github.com/furni1977/<name>`
 
 
-- `shinysense`: R package to use sensor data in Shiny apps
-- `tuftesque`: Hugo theme (behind LiveFreeOrDichotomize.com)
-- `slid3r`: D3 add-on for fully svg slider inputs
+- `Montyhall`: R package tosolve Montyhall problem
+
 
 
 More info {#more-info}
 --------------------------------------------------------------------------------
 
-See full CV at nickstrayer.me/cv for more complete list of positions and publications.
+See full CV at https://watts-college.github.io/PAF514_module6_CV for more complete list of positions and publications.
 
 
 Disclaimer {#disclaimer}
@@ -104,7 +103,7 @@ Disclaimer {#disclaimer}
 
 Made w/ [**pagedown**](https://github.com/rstudio/pagedown). 
 
-Source code: [github.com/nstrayer/cv](https://github.com/nstrayer/cv).
+Source code: [https://watts-college.github.io/PAF514_module6_CV](https://watts-college.github.io/PAF514_module6_CV).
 
 Last updated on `r Sys.Date()`.
 
@@ -114,13 +113,11 @@ Last updated on `r Sys.Date()`.
 Main
 ================================================================================
 
-Nick Strayer {#title}
+Farhana's Resume {#title}
 --------------------------------------------------------------------------------
 
 ```{r}
-intro_text <- "I have made [visualizations viewed by hundreds of thousands of people](https://www.nytimes.com/interactive/2016/08/26/us/college-student-migration.html), [sped up query times for 25 terabytes of data by an average of 4,800 times](https://livefreeordichotomize.com/2019/06/04/using_awk_and_r_to_parse_25tb/), and built [packages for R](https://github.com/nstrayer/shinysense) that let you [do magic](http://nickstrayer.me/dataDayTexas/).
-
-Currently searching for a data science position that allows me to build tools using visualization and machine learning to help people explore and understand their data. 
+intro_text <- "My background as a highly self-motivated professional has equipped me with exceptional interpersonal and communication skills, allowing me to adeptly tackle complex problems. My experience as a data analyst at Trinity Centre for Global Health in Dublin and my 2 years of research at Arizona state University have sharpened my expertise in data analysis, statistical analysis, study design, and report writing. I am currently looking for internship and job opportunities  to apply my skills and further advance my career. 
 "
 
 
